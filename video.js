@@ -14,30 +14,7 @@ async function startVideo(){
     //         height: 720 
     //     } 
     //   }
-
-      const mediaStream = await navigator.mediaDevices.getUserMedia({video: true});
-        // const video = document.createElement('video');
-        //   constraints
-        // navigator.mediaDevices.getUserMedia(
-        //     { video: {} },
-        //     )
-        video.srcObject = mediaStream;
-        // stream => video.srcObject = mediaStream;
-        // { video: {} },
-        //     stream => video.srcObject = stream,
-        //     err => console.error(err)
-        // )
-    // navigator.mediaDevices.getUserMedia({ video: {} })
-    // .then(function(stream) {
-    //     console.log( stream )
-    //     /* use the stream */
-    // })
-    // .catch(function(err) {
-    //     console.log( err )
-    // /* handle the error */
-    // });
+  const mediaStream = await navigator.mediaDevices.getUserMedia({video: true});
+  video.srcObject = mediaStream;
 }
-
 startVideo()
-
-// window.onload = startVideo
